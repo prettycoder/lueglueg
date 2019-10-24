@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fullname: MyString
+  email: MyString
+  phone: MyString
+  pickup: MyString
+  quantity: 1
+  order_date: 2019-10-06 18:41:11
+  pickup_date: 2019-10-06
+  payed_date: 2019-10-06
+  email_confirmation_sent: 2019-10-06 18:41:11
+  email_pickup_sent: 2019-10-06
+  total_price: 9.99
+
+two:
+  fullname: MyString
+  email: MyString
+  phone: MyString
+  pickup: MyString
+  quantity: 1
+  order_date: 2019-10-06 18:41:11
+  pickup_date: 2019-10-06
+  payed_date: 2019-10-06
+  email_confirmation_sent: 2019-10-06 18:41:11
+  email_pickup_sent: 2019-10-06
+  total_price: 9.99

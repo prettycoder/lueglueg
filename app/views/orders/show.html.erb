@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @order.fullname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @order.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @order.phone %>
+</p>
+
+<p>
+  <strong>Pickup:</strong>
+  <%= @order.pickup %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @order.quantity %>
+</p>
+
+<p>
+  <strong>Order date:</strong>
+  <%= @order.order_date %>
+</p>
+
+<p>
+  <strong>Pickup date:</strong>
+  <%= @order.pickup_date %>
+</p>
+
+<p>
+  <strong>Payed date:</strong>
+  <%= @order.payed_date %>
+</p>
+
+<p>
+  <strong>Email confirmation sent:</strong>
+  <%= @order.email_confirmation_sent %>
+</p>
+
+<p>
+  <strong>Email pickup sent:</strong>
+  <%= @order.email_pickup_sent %>
+</p>
+
+<p>
+  <strong>Total price:</strong>
+  <%= @order.total_price %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

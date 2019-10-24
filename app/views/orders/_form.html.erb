@@ -1,0 +1,72 @@
+<%= form_with(model: order, local: true) do |form| %>
+  <% if order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% order.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :fullname, "Vorname Nachname<span class='e'>firstname lastname</span>".html_safe %>
+    <%= form.text_field :fullname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email, "Email<span class='e'>email</span>".html_safe %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone, "Telefon<span class='e'>phone</span>".html_safe %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pickup %>
+    <%= form.text_field :pickup %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.number_field :quantity %>
+  </div>
+
+<!--  <div class="field">-->
+    <%#= form.label :order_date %>
+    <%#= form.datetime_select :order_date %>
+<!--  </div>-->
+
+<!--  <div class="field">-->
+    <%#= form.label :pickup_date %>
+    <%#= form.date_select :pickup_date %>
+<!--  </div>-->
+
+<!--  <div class="field">-->
+    <%#= form.label :payed_date %>
+    <%#= form.date_select :payed_date %>
+<!--  </div>-->
+
+<!--  <div class="field">-->
+    <%#= form.label :email_confirmation_sent %>
+    <%#= form.datetime_select :email_confirmation_sent %>
+<!--  </div>-->
+
+<!--  <div class="field">-->
+    <%#= form.label :email_pickup_sent %>
+    <%#= form.date_select :email_pickup_sent %>
+<!--  </div>-->
+
+  <div class="field">
+    <%= form.label :total_price %>
+    <%= form.text_field :total_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
